@@ -6,10 +6,11 @@ namespace HoraSistema
     {
         static void Main(string[] args)
         {
+            //A Seguinte Hora//
             DateTime Hora;
-            Hora = DateTime.Now;
-
+            
             Console.ForegroundColor = ConsoleColor.Yellow;
+            Hora = DateTime.Now;
             Console.Write($"Data e hora Recente:{Hora}");
             Console.ResetColor();
             
