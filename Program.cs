@@ -7,13 +7,15 @@ namespace HoraSistema
         static void Main(string[] args)
         {
             DateTime Hora;
-
             Hora = DateTime.Now;
-            Console.Write("Data e hora Recente: ");
-            Console.WriteLine($"{Hora}");
-            Console.WriteLine();
 
-            Console.WriteLine(" Okay !");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write($"Data e hora Recente:{Hora}");
+            Console.ResetColor();
+            
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine(":Segundos");
+            Console.ResetColor();
             Console.ReadKey();
         }
     }
